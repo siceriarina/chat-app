@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat Realtime</title>
+</head>
+<body>
+  <h1>Chat Kamu 😄</h1>
+
+  <input id="msg" placeholder="ketik pesan...">
+  <button onclick="kirim()">Kirim</button>
+
+  <p id="chat"></p>
+
+  <script>
+    function kirim() {
+      let msg = document.getElementById("msg").value;
+      document.getElementById("chat").innerHTML += "<br>Kamu: " + msg;
+    }
+  </script>
+</body>
+</html>
